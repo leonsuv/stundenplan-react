@@ -1,16 +1,18 @@
-import { useState } from 'react'
+import {Route, Routes, useNavigate} from 'react-router-dom';
+import { Button, NextUIProvider } from '@nextui-org/react'
 import './App.css'
-import { Button } from './components/ui/button'
+import NavBar from './components/NavBar';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const navigate = useNavigate();
   return (
-    <>
-      <Button onClick={()=>setCount(count+1)}>
-        Count: {count}
-      </Button>
-    </>
+    <NextUIProvider navigate={navigate}>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Button>Page1</Button>} />
+        <Route path="/about" element={<Button>Page2</Button>} />
+      </Routes>
+    </NextUIProvider>
   )
 }
 
