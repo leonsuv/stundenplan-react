@@ -1,0 +1,2816 @@
+[
+  {
+    "Date": "2024-01-08",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-09",
+    "Event": [
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-10",
+    "Event": [
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-11",
+    "Event": [
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "ZME 1.04"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "ZME 1.04"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-15",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-16",
+    "Event": [
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-17",
+    "Event": [
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-18",
+    "Event": [
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "09",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "10",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "ZWT 2.04"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "12",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "ZWT 2.04"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-19",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "08",
+          "Minute": "15"
+        },
+        "Endtime": {
+          "Hour": "09",
+          "Minute": "45"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "12",
+          "Minute": "30"
+        },
+        "Endtime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-22",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-23",
+    "Event": [
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-24",
+    "Event": [
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-25",
+    "Event": [
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "ZWT 2.04"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "ZWT 2.04"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-26",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "08",
+          "Minute": "15"
+        },
+        "Endtime": {
+          "Hour": "09",
+          "Minute": "45"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "12",
+          "Minute": "30"
+        },
+        "Endtime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-29",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-30",
+    "Event": [
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-01-31",
+    "Event": [
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-01",
+    "Event": [
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "ZWT 2.04"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "ZWT 2.04"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-02",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "12",
+          "Minute": "30"
+        },
+        "Endtime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-05",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-06",
+    "Event": [
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-07",
+    "Event": [
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-08",
+    "Event": [
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-09",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "12",
+          "Minute": "30"
+        },
+        "Endtime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-12",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-13",
+    "Event": [
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Buchhaltung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Andreas Eiselt",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-14",
+    "Event": [
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-15",
+    "Event": [
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-16",
+    "Event": [
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "12",
+          "Minute": "30"
+        },
+        "Endtime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-19",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-20",
+    "Event": [
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-21",
+    "Event": [
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-23",
+    "Event": [
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "12",
+          "Minute": "30"
+        },
+        "Endtime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-26",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-27",
+    "Event": [
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-28",
+    "Event": [
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-02-29",
+    "Event": [
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-01",
+    "Event": [
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "12",
+          "Minute": "30"
+        },
+        "Endtime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-04",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-05",
+    "Event": [
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-06",
+    "Event": [
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-07",
+    "Event": [
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-08",
+    "Event": [
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "12",
+          "Minute": "30"
+        },
+        "Endtime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-11",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-12",
+    "Event": [
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-14",
+    "Event": [
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-15",
+    "Event": [
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Ludger Bölke",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-18",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "15",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Software-Praktikum",
+        "Kind": "V",
+        "Teacher": "Martin Helmich",
+        "Starttime": {
+          "Hour": "15",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "17",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-19",
+    "Event": [
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      },
+      {
+        "Title": "Accounting Bilanzierung",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "S 3"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-21",
+    "Event": [
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "10",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "11",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "ZWT 2.04"
+        ]
+      },
+      {
+        "Title": "Rechnernetze",
+        "Kind": "V",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "11",
+          "Minute": "45"
+        },
+        "Endtime": {
+          "Hour": "13",
+          "Minute": "15"
+        },
+        "Rooms": [
+          "ZWT 2.04"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-22",
+    "Event": [
+      {
+        "Title": "VWL Märkte u. Wettbewerb",
+        "Kind": "K",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "09",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "10",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "Hörsaal"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-25",
+    "Event": [
+      {
+        "Title": "IT-Sicherheit",
+        "Kind": "mP",
+        "Teacher": "-",
+        "Starttime": {
+          "Hour": "09",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "14",
+          "Minute": "00"
+        },
+        "Rooms": [
+          "Hörsaal"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-27",
+    "Event": [
+      {
+        "Title": "Accounting Buchhaltung und Finanzierung",
+        "Kind": "K",
+        "Teacher": "Prof. Dr. Wilfried Teichert",
+        "Starttime": {
+          "Hour": "09",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "10",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "Hörsaal"
+        ]
+      }
+    ]
+  },
+  {
+    "Date": "2024-03-28",
+    "Event": [
+      {
+        "Title": "Rechnernetze",
+        "Kind": "K",
+        "Teacher": "Prof. Dr. Herwig Henseler",
+        "Starttime": {
+          "Hour": "09",
+          "Minute": "00"
+        },
+        "Endtime": {
+          "Hour": "10",
+          "Minute": "30"
+        },
+        "Rooms": [
+          "Hörsaal"
+        ]
+      }
+    ]
+  }
+]
