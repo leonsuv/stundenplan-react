@@ -6,7 +6,7 @@ import { AppContext } from "@/context/AppContext";
 
 export default function EventCalendar() {
   const { date, setDate } = useContext(AppContext)
-  const [date2, setDate2] = useState<Date | undefined>(new Date())
+  const [date2, setDate2] = useState<Date | undefined>(new Date(date.year, date.month-1, date.day))
 
   useEffect(() => {
     setDate2(new Date(date.year, date.month-1, date.day))
