@@ -8,14 +8,18 @@ export interface iDate {
 
 export const AppContext = createContext<{
   date: iDate;
-  setDate: (value: iDate) => void
+  setDate: (value: iDate) => void;
+  authToken: string;
+  refreshToken: string
 }>({
   date: {
     day: 22,
     month: 1,
     year: 2024
   },
-  setDate: () => { }
+  setDate: () => { },
+  authToken: "Bearer ",
+  refreshToken: "Bearer "
 });
 
 export const AppContextProvider = ({ children }: { children: any }) => {
@@ -25,9 +29,16 @@ export const AppContextProvider = ({ children }: { children: any }) => {
     month: date.getUTCMonth()+1,
     year: date.getFullYear()
   });
+  const [authToken] = useState("Bearer ");
+  const [refreshToken] = useState("Bearer ");
 
   return (
-    <AppContext.Provider value={{ date: state, setDate: setState }}>
+    <AppContext.Provider value={{
+      date: state,
+      setDate: setState,
+      authToken: authToken,
+      refreshToken: refreshToken
+    }}>
       {children}
     </AppContext.Provider>
   );

@@ -1,6 +1,6 @@
 import React from "react";
-import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link} from "@nextui-org/react";
-import {AcmeLogo} from "./AcmeLogo";
+import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
+import { PhwtLogo } from "./PhwtLogo";
 import { useLocation } from "react-router-dom";
 
 export default function NavBar() {
@@ -20,8 +20,7 @@ export default function NavBar() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarBrand>
-          <AcmeLogo />
-          <p className="font-bold text-inherit">ACME</p>
+          <PhwtLogo />
         </NavbarBrand>
         <NavbarItem isActive={location.pathname === "/"}>
           <Link color="foreground" href="/">
@@ -37,35 +36,34 @@ export default function NavBar() {
 
       <NavbarContent className="sm:hidden pr-3" justify="center">
         <NavbarBrand>
-          <AcmeLogo />
-          <p className="font-bold text-inherit">ACME</p>
+          <PhwtLogo />
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarMenu>
-          <NavbarMenuItem key="Home">
-            <Link
-              className="w-full"
-              color="foreground"
-              href="/"
-              size="lg"
-              onClick={()=>setIsMenuOpen(!isMenuOpen)}
-              
-            >
-              Home
-            </Link>
-          </NavbarMenuItem>
-          <NavbarMenuItem key="About">
-            <Link
-              className="w-full"
-              color="foreground"
-              href="/about"
-              size="lg"
-              onClick={()=>setIsMenuOpen(!isMenuOpen)}
-            >
-              About
-            </Link>
-          </NavbarMenuItem>
+        <NavbarMenuItem key="Home">
+          <Link
+            className="w-full"
+            color="foreground"
+            href="/"
+            size="lg"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+
+          >
+            Home
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem key="About">
+          <Link
+            className="w-full"
+            color="foreground"
+            href="/about"
+            size="lg"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            About
+          </Link>
+        </NavbarMenuItem>
       </NavbarMenu>
     </Navbar>
   );
