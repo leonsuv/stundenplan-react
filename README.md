@@ -25,12 +25,10 @@ cd stundenplan-react
 ```
 3. Install dependencies:
 ```bash
-npm install
+npm i
 ```
-4. Create a .env file in the root directory and add the following:
-```env
-REACT_APP_API_URL=https://app.phwt.de/doc/
-```
+4. Request CORS avoidance for the PHWT-API:
+[Registration of IP-Address](https://cors-anywhere.herokuapp.com/corsdemo)
 5. Start the development server:
 ```bash
 npm run dev
