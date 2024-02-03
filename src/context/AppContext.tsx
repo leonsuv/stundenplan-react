@@ -1,44 +1,47 @@
-import { createContext, useState } from 'react';
+import React, { createContext, useState } from 'react';
 
 export interface iDate {
-  day: number,
-  month: number,
-  year: number
+  day: number;
+  month: number;
+  year: number;
 }
 
-export const AppContext = createContext<{
+interface AppContextProps {
   date: iDate;
   setDate: (value: iDate) => void;
-  authToken: string;
-  refreshToken: string
-}>({
+  isLoggedIn: boolean;
+  setLoggedIn: (value: boolean) => void;
+}
+
+export const AppContext = createContext<AppContextProps>({
   date: {
     day: 22,
     month: 1,
     year: 2024
   },
-  setDate: () => { },
-  authToken: "Bearer ",
-  refreshToken: "Bearer "
+  setDate: () => {},
+  isLoggedIn: false,
+  setLoggedIn: () => {}
 });
 
-export const AppContextProvider = ({ children }: { children: any }) => {
-  const date = new Date(Date.now());
-  const [state, setState] = useState({
-    day: date.getDate(),
-    month: date.getUTCMonth()+1,
-    year: date.getFullYear()
+export const AppContextProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const dateNow = new Date();
+  const [date, setDate] = useState<iDate>({
+    day: dateNow.getDate(),
+    month: dateNow.getUTCMonth() + 1,
+    year: dateNow.getFullYear()
   });
-  const [authToken] = useState("Bearer ");
-  const [refreshToken] = useState("Bearer ");
+  const [isLoggedIn, setLoggedIn] = useState(false);
 
   return (
-    <AppContext.Provider value={{
-      date: state,
-      setDate: setState,
-      authToken: authToken,
-      refreshToken: refreshToken
-    }}>
+    <AppContext.Provider
+      value={{
+        date: date,
+        setDate: setDate,
+        isLoggedIn: isLoggedIn,
+        setLoggedIn: setLoggedIn
+      }}
+    >
       {children}
     </AppContext.Provider>
   );

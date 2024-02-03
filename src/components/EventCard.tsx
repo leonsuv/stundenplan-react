@@ -9,15 +9,15 @@ export default function EventCard({ event }: { event: any }) {
             <p className="text-md">
               {event.Title}
             </p>
-            <p className="text-small text-default-500">
+            <a className="text-small text-default-500">
               {event.Starttime.Hour + ":" + event.Starttime.Minute + " "}
               -
               {" " + event.Endtime.Hour + ":" + event.Endtime.Minute}
-            </p>
+            </a>
           </div>
         </CardHeader>
         <CardBody>
-          <p>{event.Teacher}</p>
+          <a>{event.Teacher}</a>
           <p>
             {event.Rooms.map((room: string) => (
               <>

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
 import { PhwtLogo } from "./PhwtLogo";
 import { useLocation } from "react-router-dom";
+import { AppContext } from "@/context/AppContext";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const location = useLocation();
+  const { isLoggedIn, setLoggedIn } = useContext(AppContext);
 
   return (
     <Navbar
@@ -30,6 +32,17 @@ export default function NavBar() {
         <NavbarItem isActive={location.pathname === "/about"}>
           <Link href="/about" aria-current="page">
             About
+          </Link>
+        </NavbarItem>
+        <NavbarItem key="Logout">
+          <Link
+            className="w-full"
+            color="danger"
+            href="/login"
+            size="lg"
+            onClick={() => setLoggedIn(false)}
+          >
+            {isLoggedIn ? "Logout" : "Login"}
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -62,6 +75,17 @@ export default function NavBar() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             About
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem key="Logout">
+          <Link
+            className="w-full"
+            color="danger"
+            href="/login"
+            size="lg"
+            onClick={() => {setIsMenuOpen(!isMenuOpen); setLoggedIn(false)}}
+          >
+            {isLoggedIn ? "Logout" : "Login"}
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>
