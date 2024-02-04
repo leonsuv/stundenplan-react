@@ -18,13 +18,11 @@ export default function EventCard({ event }: { event: any }) {
         </CardHeader>
         <CardBody>
           <a>{event.Teacher}</a>
-          <p>
+          <div>
             {event.Rooms.map((room: string) => (
-              <>
-                <p>{room}</p>
-              </>
+                <p key={room}>{room}</p>
             ))}
-          </p>
+          </div>
         </CardBody>
       </Card>
     </>

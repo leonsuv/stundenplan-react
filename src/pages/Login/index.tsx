@@ -1,17 +1,18 @@
 import { AppContext } from "@/context/AppContext";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { Button, Input } from "@nextui-org/react";
-import { useContext } from "react";
-import { Navigate, redirect, useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 export function Login() {
   const [username, setUsername ] = useLocalStorage("username", "");
   const [password, setPassword ] = useLocalStorage("password", "");
+  const [loginError, setLoginError] = useState<boolean>(false);
   localStorage.setItem("persist", "true");
   const [ authtoken, setAuthtoken ] = useLocalStorage("authToken", "Bearer ");
   const [ refreshtoken, setRefreshtoken ] = useLocalStorage("refreshToken", "Bearer ");
-  const { isLoggedIn, setLoggedIn } = useContext(AppContext);
+  const { setLoggedIn } = useContext(AppContext);
   const navigate = useNavigate();
 
   async function reqLogin() {
@@ -25,22 +26,18 @@ export function Login() {
       });
 
       if (!response.ok) {
-        // Handle authentication error here
-        console.error("Authentication failed");
+        setLoginError(true);
         return;
       }
 
       const data = await response.json();
 
-      // Assuming your API response contains access_token and refresh_token
       setUsername("");
       setPassword("");
       setAuthtoken(`Bearer ${data.access_token}`);
       setRefreshtoken(`Bearer ${data.refresh_token}`);
       setLoggedIn(true)
 
-      // Optionally, you may want to do something else on successful login
-      console.log("Login successful");
       navigate("/");
     } catch (error) {
       console.error("Error during login:", error);
@@ -50,15 +47,21 @@ export function Login() {
   return (
     <div>
       <Input value={username}
-        onChange={(e) => setUsername(e.target.value)}
+        onChange={(e) => {setUsername(e.target.value); setLoginError(false)}}
         type="username"
         label="Benutzername"
-        placeholder="m.mustermann" />
+        placeholder="m.mustermann"
+        isRequired
+        isInvalid={loginError}
+        />
       <Input value={password}
-        onChange={(e) => setPassword(e.target.value)}
+        onChange={(e) => {setPassword(e.target.value); setLoginError(false)}}
         type="password"
         label="Passwort"
-        placeholder="***********" />
+        placeholder="***********"
+        isRequired
+        isInvalid={loginError}
+        />
       <Button onClick={reqLogin}>Login</Button>
     </div>
   )

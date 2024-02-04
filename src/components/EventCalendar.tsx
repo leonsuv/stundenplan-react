@@ -2,40 +2,57 @@ import { useContext, useEffect, useState } from "react";
 import { AppContext } from "@/context/AppContext";
 import { Calendar } from "./ui/calendar";
 import { de } from "date-fns/locale"
+import events from '../data/mock.json'
 
 export default function EventCalendar() {
-  const { date, setDate } = useContext(AppContext);
-  const [date2, setDate2] = useState<Date | undefined>(new Date(date.year, date.month - 1, date.day));
+  const { date: dateCtx, setDate: setDateCtx } = useContext(AppContext);
+  const [dateState, setDateState] = useState<Date | undefined>(new Date(dateCtx.year, dateCtx.month - 1, dateCtx.day));
+  const [shownMonth, setShownMonth] = useState<Date | undefined>(dateState)
+  let prevMonthValue = dateState;
+
+  const eventDates = events.map((event) => {
+    const dateParts = event.Date.split('-').map(part => parseInt(part, 10));
+    return new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+  });
 
   useEffect(() => {
-    if (date.year !== date2?.getFullYear() ||
-      date.month !== date2?.getMonth() + 1 ||
-      date.day !== date2?.getDate()) {
-      setDate2(new Date(date.year, date.month - 1, date.day));
+    if (dateCtx.year !== dateState?.getFullYear() ||
+      dateCtx.month !== dateState?.getMonth() + 1 ||
+      dateCtx.day !== dateState?.getDate()) {
+      setDateState(new Date(dateCtx.year, dateCtx.month - 1, dateCtx.day));
+      setShownMonth(new Date(dateCtx.year, dateCtx.month - 1, dateCtx.day));
     }
-  }, [date]);
+  }, [dateCtx]);
 
   useEffect(() => {
-    if (date2?.getFullYear() !== date.year ||
-      date2?.getMonth() + 1 !== date.month ||
-      date2?.getDate() !== date.day) {
-      setDate({
-        day: date2?.getDate() ?? 4,
-        month: date2 ? date2.getUTCMonth() + 1 : 5,
-        year: date2?.getFullYear() ?? 2023
-      });
+    if (dateState) {
+      if (
+        dateState.getFullYear() !== dateCtx.year ||
+        dateState.getMonth() !== dateCtx.month - 1 ||
+        dateState.getDate() !== dateCtx.day
+      ) {
+        setDateCtx({
+          day: dateState.getDate(),
+          month: dateState.getMonth() + 1,
+          year: dateState.getFullYear(),
+        });
+      }
     }
-  }, [date2]);
+  }, [dateState]);
 
   return (
     <>
       <Calendar
         mode="single"
         showOutsideDays={false}
+        month={shownMonth}
+        onMonthChange={(monthChange) => setShownMonth(monthChange)}
         ISOWeek
         locale={de}
-        selected={date2}
-        onSelect={setDate2}
+        selected={dateState}
+        onSelect={setDateState}
+        modifiers={{ booked: eventDates }}
+        modifiersClassNames={{ booked: "border-1 rounded-lg border-gray-400" }}
         className="rounded-md border h-fit"
       />
     </>

@@ -1,5 +1,14 @@
 import React, { useContext } from "react";
-import { Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link } from "@nextui-org/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarMenuToggle,
+  NavbarMenuItem,
+  NavbarMenu,
+  NavbarContent,
+  NavbarItem,
+  Link
+} from "@nextui-org/react";
 import { PhwtLogo } from "./PhwtLogo";
 import { useLocation } from "react-router-dom";
 import { AppContext } from "@/context/AppContext";
