@@ -1,68 +1,69 @@
-import { AppContext } from "@/context/AppContext";
-import { useLocalStorage } from "@/hooks/useLocalStorage";
-import { Button, Input } from "@nextui-org/react";
-import { useContext, useState } from "react";
-import { useNavigate } from "react-router-dom";
-
+import { Image, Link } from "@nextui-org/react";
+import UserAuthForm from "./UserAuthForm";
 
 export function Login() {
-  const [username, setUsername ] = useLocalStorage("username", "");
-  const [password, setPassword ] = useLocalStorage("password", "");
-  const [loginError, setLoginError] = useState<boolean>(false);
-  localStorage.setItem("persist", "true");
-  const [ authtoken, setAuthtoken ] = useLocalStorage("authToken", "Bearer ");
-  const [ refreshtoken, setRefreshtoken ] = useLocalStorage("refreshToken", "Bearer ");
-  const { setLoggedIn } = useContext(AppContext);
-  const navigate = useNavigate();
-
-  async function reqLogin() {
-    try {
-      const response = await fetch("https://cors-anywhere.herokuapp.com/https://app.phwt.de/api/v1/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Basic ${btoa(`${username}:${password}`)}`, // Encode username and password
-        },
-      });
-
-      if (!response.ok) {
-        setLoginError(true);
-        return;
-      }
-
-      const data = await response.json();
-
-      setUsername("");
-      setPassword("");
-      setAuthtoken(`Bearer ${data.access_token}`);
-      setRefreshtoken(`Bearer ${data.refresh_token}`);
-      setLoggedIn(true)
-
-      navigate("/");
-    } catch (error) {
-      console.error("Error during login:", error);
-    }
-  }
-
   return (
-    <div>
-      <Input value={username}
-        onChange={(e) => {setUsername(e.target.value); setLoginError(false)}}
-        type="username"
-        label="Benutzername"
-        placeholder="m.mustermann"
-        isRequired
-        isInvalid={loginError}
-        />
-      <Input value={password}
-        onChange={(e) => {setPassword(e.target.value); setLoginError(false)}}
-        type="password"
-        label="Passwort"
-        placeholder="***********"
-        isRequired
-        isInvalid={loginError}
-        />
-      <Button onClick={reqLogin}>Login</Button>
-    </div>
+    <>
+      <div className="container relative hidden h-vh flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
+        <div className="relative hidden h-full flex-col bg-muted p-10 text-white lg:flex dark:border-r">
+          <div className="absolute inset-0 bg-zinc-900" />
+          <div className="relative z-20 flex items-center text-lg font-medium">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="mr-2 h-6 w-6"
+            >
+              <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3" />
+            </svg>
+            Acme Inc
+          </div>
+          <div className="relative z-20 mt-auto">
+            <blockquote className="space-y-2">
+              <p className="text-lg">
+                &ldquo;This library has saved me countless hours of work and
+                helped me deliver stunning designs to my clients faster than
+                ever before.&rdquo;
+              </p>
+              <footer className="text-sm">Sofia Davis</footer>
+            </blockquote>
+          </div>
+        </div>
+        <div className="lg:p-8">
+          <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
+            <div className="flex flex-col space-y-2 text-center">
+              <h1 className="text-2xl font-semibold tracking-tight">
+                Anmleden beim Stundenplan
+              </h1>
+              <p className="text-sm text-muted-foreground">
+                Zum fortfahren Benutzerdaten angeben.
+              </p>
+            </div>
+            <UserAuthForm />
+            <p className="px-8 text-center text-sm text-muted-foreground">
+              Mit dem Klicken auf Anmelden, nehmen Sie die{" "}
+              <Link
+                href="https://ilias.phwt.de"
+                className="underline underline-offset-4 hover:text-primary"
+              >
+                Interne Benutzerrichtlinie der PHWT 
+              </Link>{" "}
+              und{" "}
+              <Link
+                href="https://www.phwt.de/datenschutz/"
+                className="underline underline-offset-4 hover:text-primary"
+              >
+                Datenschutzerklärung
+              </Link>
+              {" "}an.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }

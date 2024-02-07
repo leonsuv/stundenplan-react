@@ -7,9 +7,11 @@ import {
   NavbarMenu,
   NavbarContent,
   NavbarItem,
-  Link
+  Link,
+  Button,
+  Spacer
 } from "@nextui-org/react";
-import { PhwtLogo } from "./PhwtLogo";
+import PhwtLogo from "./PhwtLogo";
 import { useLocation } from "react-router-dom";
 import { AppContext } from "@/context/AppContext";
 
@@ -43,16 +45,19 @@ export default function NavBar() {
             About
           </Link>
         </NavbarItem>
+        </NavbarContent>
+        <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem key="Logout">
-          <Link
-            className="w-full"
-            color="danger"
+          <Button
+            color="primary"
             href="/login"
-            size="lg"
+            as={Link}
+            size="md"
+            className=""
             onClick={() => setLoggedIn(false)}
           >
             {isLoggedIn ? "Logout" : "Login"}
-          </Link>
+          </Button>
         </NavbarItem>
       </NavbarContent>
 
@@ -86,10 +91,11 @@ export default function NavBar() {
             About
           </Link>
         </NavbarMenuItem>
+        <Spacer/>
         <NavbarMenuItem key="Logout">
           <Link
             className="w-full"
-            color="danger"
+            color="primary"
             href="/login"
             size="lg"
             onClick={() => {setIsMenuOpen(!isMenuOpen); setLoggedIn(false)}}
