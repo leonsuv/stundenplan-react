@@ -13,13 +13,11 @@ function App() {
   return (
     <NextUIProvider navigate={navigate}>
       <AppContextProvider>
-        <div className='flex flex-row min-h-screen justify-center'>
           <Routes>
             <Route path="/" element={<PrivateRoute><Home /></PrivateRoute>} />
             <Route path="/about" element={<PrivateRoute><About /></PrivateRoute>} />
             <Route path="/login" element={<Login/>} />
           </Routes>
-        </div>
       </AppContextProvider>
     </NextUIProvider>
   )

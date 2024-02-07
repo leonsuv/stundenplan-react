@@ -1,5 +1,4 @@
 import { AppContext } from '@/context/AppContext';
-import { Navbar } from '@nextui-org/react';
 import { useContext } from 'react';
 import { Navigate } from 'react-router-dom';
 import NavBar from './NavBar';
@@ -14,7 +13,7 @@ const PrivateRoute: React.FC<PrivateRouteProps> = ({ children }) => {
     return <Navigate to="/login" replace />;
   }
 
-  return <><NavBar/>{children}</>;
+  return <><NavBar/><div className='flex flex-row min-h-svh justify-center'>{children}</div></>;
 };
 
 export default PrivateRoute;

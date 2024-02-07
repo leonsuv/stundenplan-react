@@ -10,18 +10,19 @@ import { useNavigate } from "react-router-dom";
 
 
 export default function UserAuthForm() {
+  const { setLoggedIn } = useContext(AppContext);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("")
+  const [isLoading, setIsLoading] = React.useState<boolean>(false)
   const [loginError, setLoginError] = useState<boolean>(false);
-  localStorage.setItem("persist", "true");
   const [, setAuthtoken] = useLocalStorage("authToken", "Bearer ");
   const [, setRefreshtoken] = useLocalStorage("refreshToken", "Bearer ");
-  const { setLoggedIn } = useContext(AppContext);
+  localStorage.setItem("persist", "true");
   const navigate = useNavigate();
-  const [isLoading, setIsLoading] = React.useState<boolean>(false)
 
   async function reqLogin() {
     setIsLoading(true);
+    console.log(username + " " + password);
     const data = await login(username, password);
     setIsLoading(false);
 
@@ -49,7 +50,10 @@ export default function UserAuthForm() {
             id="username"
             placeholder="m.mustermann"
             type="username"
+            color={loginError?"danger":"default"}
             autoCapitalize="none"
+            value={username}
+            onValueChange={(value) => setUsername(value)}
             autoComplete="username"
             autoCorrect="off"
             disabled={isLoading}
@@ -63,7 +67,10 @@ export default function UserAuthForm() {
             id="password"
             placeholder="**********"
             type="password"
+            color={loginError?"danger":"default"}
             autoCapitalize="none"
+            value={password}
+            onValueChange={(value) => setPassword(value)}
             autoComplete="password"
             autoCorrect="off"
             disabled={isLoading}

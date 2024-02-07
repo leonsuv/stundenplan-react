@@ -17,19 +17,19 @@ export default function EventOverview() {
   });
 
   return (
-    <ScrollArea className="h-[35rem] w-1/2 rounded-md border">
+    <ScrollArea className="min-h-[400px] h-auto max-h-[600px] w-1/2 rounded-md border max-w-[400px] min-w-[250px]">
       <div className="p-4">
         <div className="p-2 flex flex-row flex-1">
           <Button onClick={() => decrementDays(date, setDate, eventDates)}
             size="sm"
-            color="primary"
+            className="bg-background max-w-8 min-w-8 text-lg"
           >
             {"<"}
           </Button>
           <h4 className="mb-4 text-sm grow text-center font-medium leading-none">Vorlesungen</h4>
           <Button onClick={() => incrementDays(date, setDate, eventDates)}
             size="sm"
-            color="primary"
+            className="bg-background max-w-8 min-w-8 text-lg"
           >
             {">"}
           </Button>

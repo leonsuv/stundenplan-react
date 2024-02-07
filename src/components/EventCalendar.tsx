@@ -8,7 +8,6 @@ export default function EventCalendar() {
   const { date: dateCtx, setDate: setDateCtx } = useContext(AppContext);
   const [dateState, setDateState] = useState<Date | undefined>(new Date(dateCtx.year, dateCtx.month - 1, dateCtx.day));
   const [shownMonth, setShownMonth] = useState<Date | undefined>(dateState)
-  let prevMonthValue = dateState;
 
   const eventDates = events.map((event) => {
     const dateParts = event.Date.split('-').map(part => parseInt(part, 10));
@@ -53,7 +52,7 @@ export default function EventCalendar() {
         onSelect={setDateState}
         modifiers={{ booked: eventDates }}
         modifiersClassNames={{ booked: "border-1 rounded-lg border-gray-400" }}
-        className="rounded-md border h-fit"
+        className="rounded-md border h-fit max-w-[265px] min-w-[265px]"
       />
     </>
   );
