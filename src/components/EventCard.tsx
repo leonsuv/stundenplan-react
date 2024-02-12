@@ -1,6 +1,7 @@
+import { Event } from "@/lib/utils";
 import { Card, CardHeader, CardBody } from "@nextui-org/react";
 
-export default function EventCard({ event }: { event: any }) {
+export default function EventCard({ event }: { event: Event }) {
   return (
     <>
       <Card>

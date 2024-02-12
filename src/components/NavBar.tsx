@@ -14,11 +14,21 @@ import {
 import PhwtLogo from "./PhwtLogo";
 import { useLocation } from "react-router-dom";
 import { AppContext } from "@/context/AppContext";
+import useLocalStorage from "@/hooks/useLocalStorage";
+import { loggedOutBearer } from "@/lib/utils";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const location = useLocation();
-  const { isLoggedIn, setLoggedIn } = useContext(AppContext);
+  const { setLoggedIn } = useContext(AppContext);
+  const [ , setAuthtoken] = useLocalStorage("authToken", loggedOutBearer);
+  const [ , setRefreshtoken] = useLocalStorage("refreshToken", loggedOutBearer);
+
+  function logOut() {
+    setLoggedIn(false);
+    setAuthtoken(loggedOutBearer);
+    setRefreshtoken(loggedOutBearer)
+  }
 
   return (
     <Navbar
@@ -53,9 +63,9 @@ export default function NavBar() {
             as={Link}
             size="md"
             className=""
-            onClick={() => setLoggedIn(false)}
+            onClick={logOut}
           >
-            {isLoggedIn ? "Logout" : "Login"}
+            Logout
           </Button>
         </NavbarItem>
       </NavbarContent>
@@ -97,9 +107,9 @@ export default function NavBar() {
             color="primary"
             href="/login"
             size="lg"
-            onClick={() => {setIsMenuOpen(!isMenuOpen); setLoggedIn(false)}}
+            onClick={logOut}
           >
-            {isLoggedIn ? "Logout" : "Login"}
+            Logout
           </Link>
         </NavbarMenuItem>
       </NavbarMenu>

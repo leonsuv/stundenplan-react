@@ -1,23 +1,45 @@
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Separator } from "@/components/ui/separator"
-import events from '../data/mock.json'
 import EventCard from "./EventCard"
-import { useContext } from "react"
+import { useContext, useEffect, useState } from "react"
 import { Button } from "@nextui-org/react"
 import { AppContext, iDate } from "@/context/AppContext"
 import React from "react"
+import { getEvents } from "@/data/ApiWrapper"
+import { useLocalStorage } from "@/hooks/useLocalStorage"
+import { EventDay, loggedOutBearer } from "@/lib/utils"
 
 
 
 export default function EventOverview() {
-  const { date, setDate } = useContext(AppContext)
+  const { date, setDate } = useContext(AppContext);
+  const [ refreshToken, ] = useLocalStorage("refreshToken", loggedOutBearer);
+  const [events, setEvents] = useState<EventDay[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      setIsLoading(true);
+      try {
+        const fetchedEvents = await getEvents(refreshToken);
+        setEvents(fetchedEvents);
+      } catch (error) {
+        console.error('Error fetching events:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchEvents();
+  }, [refreshToken]);
+
   const eventDates = events.map((event) => {
-    const dateParts = event.Date.split('-').map(part => parseInt(part, 10));
+    const dateParts = event.Date.split('-').map((part: string) => parseInt(part, 10));
     return new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
   });
 
   return (
-    <ScrollArea className="min-h-[400px] h-auto max-h-[600px] w-1/2 rounded-md border max-w-[400px] min-w-[250px]">
+    <ScrollArea className="min-h-[400px] h-auto max-h-[600px] w-3/12 rounded-md border max-w-[400px] min-w-[250px]">
       <div className="p-4">
         <div className="p-2 flex flex-row flex-1">
           <Button onClick={() => decrementDays(date, setDate, eventDates)}
@@ -34,9 +56,10 @@ export default function EventOverview() {
             {">"}
           </Button>
         </div>
-        {events.find((element: any) => {
+        {isLoading && <div>Loading events...</div>}
+        {!isLoading && events.find((element: any) => {
           return element.Date === stateToStrDate(date);
-        })?.Event.map((evento, index) => (
+        })?.Event.map((evento: any, index: number) => (
           <React.Fragment key={index}>
             <EventCard key={`${evento.Starttime.Hour}-${index}`} event={evento} />
             <Separator key={`separator-${index}`} className="my-2" />

@@ -1,18 +1,61 @@
-import { useState, useEffect } from "react";
+/*
+ * Author: Mubashir Jamali <github.com/mubashirjamali101>
+ * Last Updated: 2nd Feb 2024 
+ * Description: Custom React hook for synchronizing a state with localStorage. It updates the value whenever
+ * the specified localStorage key is updated from anywhere.
+*/
 
-export function getLocalValue(key: string, initValue: any) {
-  const localValue = JSON.parse(localStorage.getItem(key)!!);
-  if (localValue) return localValue
-  if (initValue instanceof Function) return initValue();
-  return initValue;
-}
+// React Imports
+import { useState, useEffect } from 'react';
 
-export function useLocalStorage(key: string, initValue: any) {
-  const [value, setValue] = useState(() => {
-    return getLocalValue(key, initValue);
-  })
+/**
+ * Custom React hook for synchronizing a state with localStorage. It updates the value whenever
+ * the specified localStorage key is updated from anywhere.
+ *
+ * @param key - The localStorage key to store and watch the value.
+ * @param initialValue - Initial value to use if the key doesn't exist in localStorage.
+ * @returns A tuple with the current value and a setter function to update it.
+ */
+export function useLocalStorage<T>(key: string, initialValue: T | (() => T)): [T, (value: T | ((val: T) => T)) => void] {
+  const [storedValue, setStoredValue] = useState<T>(() => {
+    try {
+      const item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue instanceof Function ? initialValue() : initialValue;
+    } catch (error) {
+      console.error(`Error reading localStorage key "${key}": `, error);
+      return initialValue instanceof Function ? initialValue() : initialValue;
+    }
+  });
+
+  // Function to update localStorage and the state
+  const setValue = (value: T | ((val: T) => T)): void => {
+    try {
+      const valueToStore = value instanceof Function ? value(storedValue) : value;
+      setStoredValue(valueToStore);
+      window.localStorage.setItem(key, JSON.stringify(valueToStore));
+    } catch (error) {
+      console.error(`Error writing to localStorage key "${key}": `, error);
+    }
+  };
+
+  // Polling for changes in localStorage
   useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(value))
-  }, [key, value])
-  return [value, setValue];
+    const intervalId = setInterval(() => {
+      try {
+        const item = window.localStorage.getItem(key);
+        const currentValue = item ? JSON.parse(item) : initialValue;
+        if (currentValue !== storedValue) {
+          setStoredValue(currentValue);
+        }
+      } catch (error) {
+        console.error(`Error polling localStorage key "${key}": `, error);
+      }
+    }, 1000); // Polling interval set to 1000 ms (1 second)
+
+    return () => clearInterval(intervalId);
+  }, [key, storedValue, initialValue]);
+
+  return [storedValue, setValue];
 }
+
+export default useLocalStorage;

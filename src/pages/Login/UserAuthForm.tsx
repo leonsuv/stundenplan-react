@@ -1,28 +1,42 @@
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { AppContext } from "@/context/AppContext";
-import { login } from "@/data/ApiWrapper";
+import { getRefresh, login } from "@/data/ApiWrapper";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
+import { loggedOutBearer } from "@/lib/utils";
 import { Input, Spinner } from "@nextui-org/react";
-import React from "react";
+import React, { useEffect } from "react";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
 export default function UserAuthForm() {
   const { setLoggedIn } = useContext(AppContext);
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("")
-  const [isLoading, setIsLoading] = React.useState<boolean>(false)
+  const [username, setUsername] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [isLoading, setIsLoading] = React.useState<boolean>(false);
   const [loginError, setLoginError] = useState<boolean>(false);
-  const [, setAuthtoken] = useLocalStorage("authToken", "Bearer ");
-  const [, setRefreshtoken] = useLocalStorage("refreshToken", "Bearer ");
+  const [, setAuthtoken] = useLocalStorage("authToken", loggedOutBearer);
+  const [ refreshToken , setRefreshtoken] = useLocalStorage("refreshToken", loggedOutBearer);
   localStorage.setItem("persist", "true");
   const navigate = useNavigate();
 
+
+  useEffect(() => {
+    if (refreshToken !== loggedOutBearer) {
+      try {
+        getRefresh(refreshToken).then((res) => {
+          if (!res) return;
+          setLoggedIn(true);
+          navigate("/");
+        })
+      } catch (error) {
+        console.error(error);
+      }
+    }
+  }, [])
   async function reqLogin() {
     setIsLoading(true);
-    console.log(username + " " + password);
     const data = await login(username, password);
     setIsLoading(false);
 
@@ -35,7 +49,7 @@ export default function UserAuthForm() {
     setPassword("");
     setAuthtoken(`Bearer ${data.access_token}`);
     setRefreshtoken(`Bearer ${data.refresh_token}`);
-    setLoggedIn(true)
+    setLoggedIn(true);
 
     navigate("/");
   }

@@ -8,7 +8,7 @@ interface PrivateRouteProps {
 }
 
 const PrivateRoute: React.FC<PrivateRouteProps> = ({ children }) => {
-  const { isLoggedIn } = useContext(AppContext)
+  const { isLoggedIn } = useContext(AppContext);
   if (!isLoggedIn) {
     return <Navigate to="/login" replace />;
   }

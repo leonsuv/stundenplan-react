@@ -7,7 +7,7 @@ import events from '../data/mock.json'
 export default function EventCalendar() {
   const { date: dateCtx, setDate: setDateCtx } = useContext(AppContext);
   const [dateState, setDateState] = useState<Date | undefined>(new Date(dateCtx.year, dateCtx.month - 1, dateCtx.day));
-  const [shownMonth, setShownMonth] = useState<Date | undefined>(dateState)
+  const [shownMonth, setShownMonth] = useState<Date | undefined>(dateState);
 
   const eventDates = events.map((event) => {
     const dateParts = event.Date.split('-').map(part => parseInt(part, 10));
