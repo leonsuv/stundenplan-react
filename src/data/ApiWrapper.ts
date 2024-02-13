@@ -1,6 +1,7 @@
 //const globalproxy = "https://cors-anywhere.herokuapp.com/";
-const localproxy = "http://127.0.0.1:8080/";
-const proxyurl = localproxy;
+const customproxy = "https://corsproxy.geoger.de/"
+//const localproxy = "http://127.0.0.1:8080/";
+const proxyurl = customproxy;
 const endpoint = proxyurl+"https://app.phwt.de/api"
 
 export async function login(username: string, password: string) {
