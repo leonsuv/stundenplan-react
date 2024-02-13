@@ -13,7 +13,14 @@ const PrivateRoute: React.FC<PrivateRouteProps> = ({ children }) => {
     return <Navigate to="/login" replace />;
   }
 
-  return <><NavBar/><div className='flex flex-row min-h-svh justify-center'>{children}</div></>;
+  return (
+    <>
+      <NavBar/>
+      <div className='min-h-svh justify-center'>
+        {children}
+      </div>
+    </>
+  )
 };
 
 export default PrivateRoute;

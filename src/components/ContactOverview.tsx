@@ -34,7 +34,7 @@ export default function ContactOverview() {
   }, [refreshToken]);
 
   return (
-    <ScrollArea className="min-h-[400px] h-auto max-h-[600px] w-1/2 rounded-md border max-w-[400px] min-w-[250px]">
+    <ScrollArea className="min-h-[400px] h-auto max-h-[600px] rounded-md border max-w-[600px] min-w-[250px] col-span-2 xl:col-span-2 place-self-center">
       <div className="p-4">
         <div className="p-2 flex flex-row flex-1">
           <h4 className="mb-4 text-sm grow text-center font-medium leading-none">Kontakte</h4>

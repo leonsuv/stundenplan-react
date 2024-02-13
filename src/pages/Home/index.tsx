@@ -4,10 +4,12 @@ import EventOverview from "@/components/EventOverview";
 
 export default function Home() {
   return (
-    <div className="flex flex-col md:flex-row mx-auto">
-      <EventCalendar/>
-      <EventOverview/>
-      <ContactOverview/>
+    <div className="flex justify-center">
+      <div className="grid xl:grid-cols-4 grid-cols-2 gap-1 place-items-stretch top-2/4 md:top-auto">
+        <EventCalendar />
+        <EventOverview />
+        <ContactOverview />
+      </div>
     </div>
   )
 }

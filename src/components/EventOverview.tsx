@@ -39,7 +39,7 @@ export default function EventOverview() {
   });
 
   return (
-    <ScrollArea className="min-h-[400px] h-auto max-h-[600px] w-3/12 rounded-md border max-w-[400px] min-w-[250px]">
+    <ScrollArea className="min-h-[400px] h-auto max-h-[600px] rounded-md border w-full max-w-[400px] min-w-[250px] md:col-span-1 col-span-2 place-self-center">
       <div className="p-4">
         <div className="p-2 flex flex-row flex-1">
           <Button onClick={() => decrementDays(date, setDate, eventDates)}

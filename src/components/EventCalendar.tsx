@@ -52,7 +52,7 @@ export default function EventCalendar() {
         onSelect={setDateState}
         modifiers={{ booked: eventDates }}
         modifiersClassNames={{ booked: "border-1 rounded-lg border-gray-400" }}
-        className="rounded-md border h-fit max-w-[265px] min-w-[265px]"
+        className="rounded-md border h-fit max-w-[265px] min-w-[265px] place-self-center md:place-self-end mb-auto md:col-span-1 col-span-2"
       />
     </>
   );
