@@ -13,12 +13,12 @@ import { EventDay, loggedOutBearer } from "@/lib/utils"
 
 export default function EventOverview() {
   const { date, setDate } = useContext(AppContext);
-  const [ refreshToken, ] = useLocalStorage("refreshToken", loggedOutBearer);
+  const [refreshToken,] = useLocalStorage("refreshToken", loggedOutBearer);
   const [events, setEvents] = useState<EventDay[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    const fetchEvents = async () => {
+    (async () => {
       setIsLoading(true);
       try {
         const fetchedEvents = await getEvents(refreshToken);
@@ -28,9 +28,7 @@ export default function EventOverview() {
       } finally {
         setIsLoading(false);
       }
-    };
-
-    fetchEvents();
+    })();
   }, [refreshToken]);
 
   const eventDates = events.map((event) => {
@@ -39,7 +37,7 @@ export default function EventOverview() {
   });
 
   return (
-    <ScrollArea className="min-h-[400px] h-auto max-h-[600px] rounded-md border w-full max-w-[400px] min-w-[250px] md:col-span-1 col-span-2 place-self-center">
+    <ScrollArea className="min-h-[400px] h-auto max-h-[600px] rounded-md border w-full max-w-[400px] min-w-[250px] md:col-span-1 col-span-2 place-self-center mb-auto">
       <div className="p-4">
         <div className="p-2 flex flex-row flex-1">
           <Button onClick={() => decrementDays(date, setDate, eventDates)}

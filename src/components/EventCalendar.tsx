@@ -2,12 +2,27 @@ import { useContext, useEffect, useState } from "react";
 import { AppContext } from "@/context/AppContext";
 import { Calendar } from "./ui/calendar";
 import { de } from "date-fns/locale"
-import events from '../data/mock.json'
+import { getEvents } from "@/data/ApiWrapper";
+import { EventDay, loggedOutBearer } from "@/lib/utils";
+import useLocalStorage from "@/hooks/useLocalStorage";
 
 export default function EventCalendar() {
   const { date: dateCtx, setDate: setDateCtx } = useContext(AppContext);
   const [dateState, setDateState] = useState<Date | undefined>(new Date(dateCtx.year, dateCtx.month - 1, dateCtx.day));
   const [shownMonth, setShownMonth] = useState<Date | undefined>(dateState);
+  const [refreshToken,] = useLocalStorage("refreshToken", loggedOutBearer);
+  const [events, setEvents] = useState<EventDay[]>([]);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const fetchedEvents = await getEvents(refreshToken);
+        setEvents(fetchedEvents);
+      } catch (error) {
+        console.error('Error fetching events:', error);
+      }
+    })();
+  });
 
   const eventDates = events.map((event) => {
     const dateParts = event.Date.split('-').map(part => parseInt(part, 10));
@@ -45,7 +60,7 @@ export default function EventCalendar() {
         mode="single"
         showOutsideDays={false}
         month={shownMonth}
-        onMonthChange={(monthChange) => setShownMonth(monthChange)}
+        onMonthChange={(monthChange: Date) => setShownMonth(monthChange)}
         ISOWeek
         locale={de}
         selected={dateState}
