@@ -15,7 +15,7 @@ export function Login() {
           <div>
 
           </div>
-          <WavyBackground className="relative z-0 mb-auto" canvasClassName="md:absolute hidden amax-w-[50vw]">
+          <WavyBackground className="relative z-0 mb-auto" canvasClassName="md:absolute max-w-[50vw]">
             <blockquote className="space-y-2">
               <p className="text-lg">
                 Dieses Projekt wurde von{" "}
