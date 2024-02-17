@@ -1,6 +1,7 @@
 import { Link } from "@nextui-org/react";
 import UserAuthForm from "./UserAuthForm";
 import PhwtLogo from "@/components/PhwtLogo";
+import { WavyBackground } from "@/components/ui/wavy-background";
 
 export function Login() {
   return (
@@ -9,25 +10,26 @@ export function Login() {
           <div className="hidden md:inline absolute right-4 top-4 md:right-8 md:top-8">
             <PhwtLogo/>
           </div>
-        <div className="relative hidden h-full flex-col bg-muted p-10 text-white lg:flex dark:border-r">
+        <div className="relative hidden h-screen flex-col bg-muted p-10 text-white lg:flex dark:border-r max-w-[50vw]">
           <div className="absolute inset-0 bg-zinc-900" />
           <div>
 
           </div>
-          <div className="relative z-20 mt-auto">
+          <WavyBackground className="relative z-0 mb-auto">
             <blockquote className="space-y-2">
               <p className="text-lg">
                 Dieses Projekt wurde von{" "}
               <Link
                 href="https://github.com/leonsuv/stundenplan-react"
                 className="underline underline-offset-4 hover:text-gray-500 text-blue-400"
+                target="_blank"
               >
                 Leon Suvorkov 
               </Link>{" "}
               Entwickelt
               </p>
             </blockquote>
-          </div>
+          </WavyBackground>
         </div>
         <div className="lg:p-8">
           <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">

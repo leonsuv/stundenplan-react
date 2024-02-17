@@ -16,7 +16,7 @@ const PrivateRoute: React.FC<PrivateRouteProps> = ({ children }) => {
   return (
     <>
       <NavBar/>
-      <div className='min-h-svh justify-center'>
+      <div className='min-h-screen justify-center pt-[4rem]'>
         {children}
       </div>
     </>
