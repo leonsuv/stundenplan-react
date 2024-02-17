@@ -10,12 +10,12 @@ export function Login() {
           <div className="hidden md:inline absolute right-4 top-4 md:right-8 md:top-8">
             <PhwtLogo/>
           </div>
-        <div className="relative hidden h-screen flex-col bg-muted p-0 text-white lg:flex dark:border-r max-w-[50vw]">
+        <div className="md:relative hidden h-screen flex-col bg-muted p-0 text-white lg:flex dark:border-r max-w-[50vw]">
           <div className="absolute inset-0 bg-zinc-900" />
           <div>
 
           </div>
-          <WavyBackground className="relative z-0 mb-auto" canvasClassName="max-w-[50vw]">
+          <WavyBackground className="relative z-0 mb-auto" canvasClassName="md:absolute hidden amax-w-[50vw]">
             <blockquote className="space-y-2">
               <p className="text-lg">
                 Dieses Projekt wurde von{" "}
@@ -33,7 +33,7 @@ export function Login() {
         </div>
         <div className="lg:p-8">
           <div className="mx-auto flex w-full flex-col justify-center space-y-6 lg:w-[20rem]">
-            <WavyBackground className="relative z-0 my-auto" canvasClassName="md:hidden">
+            <WavyBackground className="relative z-0 my-auto" canvasClassName="md:hidden absolute">
               <div className="flex flex-col space-y-2 text-center justify-center items-center">
                 <PhwtLogo/>
                 <h1 className="text-2xl font-semibold tracking-tight">

@@ -78,7 +78,7 @@ export const WavyBackground = ({
 			ctx.lineWidth = waveWidth || 60;
 			ctx.strokeStyle = waveColors[i % waveColors.length];
 			for (x = -10; x < w + 10; x += 3) {
-				var y = noise(x / 800, 0.2 * i, nt) * 120;
+				var y = noise(x / 800, 0.2 * i*2, nt) * 120;
 				ctx.lineTo(x, y + h * 0.4 + i * 30); // adjust for height, currently at 50% of the container
 			}
 			ctx.stroke();
@@ -91,7 +91,7 @@ export const WavyBackground = ({
 		ctx.fillStyle = backgroundFill || 'rgb(2,8,23)';
 		ctx.globalAlpha = waveOpacity || 0.5;
 		ctx.fillRect(0, 0, w, h);
-		drawWave(10);
+		drawWave(5);
 		animationId = requestAnimationFrame(render);
 	};
 
@@ -115,7 +115,7 @@ export const WavyBackground = ({
 			)}
 		>
 			<canvas
-				className={cn("absolute inset-0 z-0 h-full", canvasClassName)}
+				className={cn("inset-0 z-0 h-full", canvasClassName)}
 				ref={canvasRef}
 				id="canvas"
 			></canvas>
