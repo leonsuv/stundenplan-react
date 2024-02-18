@@ -34,6 +34,15 @@ export default function UserAuthForm() {
         console.error(error);
       }
     }
+    const listener = event => {
+      if (event.code === "Enter" || event.code === "NumpadEnter") {
+        reqLogin();
+      }
+    }
+    document.addEventListener("keydown", listener);
+    return () => {
+      document.removeEventListener("keydown", listener);
+    };
   }, [])
   async function reqLogin() {
     setIsLoading(true);
