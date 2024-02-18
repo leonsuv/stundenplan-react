@@ -56,7 +56,7 @@ export default function UserAuthForm() {
   return (
     <div className={"grid gap-6"}>
       <div className="grid gap-2">
-        <div className="grid gap-1">
+        <div className="grid gap-1 w-[12rem] mx-auto">
           <Label className="sr-only" htmlFor="username">
             Benutzername
           </Label>
@@ -73,7 +73,7 @@ export default function UserAuthForm() {
             disabled={isLoading}
           />
         </div>
-        <div className="grid gap-1">
+        <div className="grid gap-1 w-[12rem] mx-auto">
           <Label className="sr-only" htmlFor="password">
             Passwort
           </Label>
@@ -90,7 +90,7 @@ export default function UserAuthForm() {
             disabled={isLoading}
           />
         </div>
-        <Button disabled={isLoading} onClick={reqLogin}>
+        <Button className="w-[8rem] mx-auto" disabled={isLoading} onClick={reqLogin}>
           {isLoading && (
             <Spinner className="mr-2 h-4 w-4 animate-spin black" />
           )}

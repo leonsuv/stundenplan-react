@@ -79,7 +79,7 @@ export const WavyBackground = ({
 			ctx.strokeStyle = waveColors[i % waveColors.length];
 			for (x = -10; x < w + 10; x += 3) {
 				var y = noise(x / 800, 0.2 * i*2, nt) * 120;
-				ctx.lineTo(x, y + h * 0.4 + i * 30); // adjust for height, currently at 50% of the container
+				ctx.lineTo(x, y + h * 0.4 + i * 15); // adjust for height, currently at 50% of the container
 			}
 			ctx.stroke();
 			ctx.closePath();
@@ -115,7 +115,7 @@ export const WavyBackground = ({
 			)}
 		>
 			<canvas
-				className={cn("inset-0 z-0 h-full", canvasClassName)}
+				className={cn("inset-0 z-0 h-fit", canvasClassName)}
 				ref={canvasRef}
 				id="canvas"
 			></canvas>

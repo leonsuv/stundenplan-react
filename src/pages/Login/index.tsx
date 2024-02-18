@@ -6,51 +6,24 @@ import { WavyBackground } from "@/components/ui/wavy-background";
 export function Login() {
   return (
     <>
-      <div className="container relative min-h-screen max-h-vh flex-col items-center justify-center grid lg:max-w-none lg:grid-cols-2 p-0">
-          <div className="hidden md:inline absolute right-4 top-4 md:right-8 md:top-8">
-            <PhwtLogo/>
-          </div>
-        <div className="md:relative hidden h-screen flex-col bg-muted p-0 text-white lg:flex dark:border-r max-w-[50vw]">
-          <div className="absolute inset-0 bg-zinc-900" />
-          <div>
-
-          </div>
-          <WavyBackground className="relative z-0 mb-auto" canvasClassName="md:absolute max-w-[50vw]">
-            <blockquote className="space-y-2">
-              <p className="text-lg">
-                Dieses Projekt wurde von{" "}
-              <Link
-                href="https://github.com/leonsuv/stundenplan-react"
-                className="underline underline-offset-4 hover:text-gray-500 text-blue-400"
-                target="_blank"
-              >
-                Leon Suvorkov 
-              </Link>{" "}
-              Entwickelt
-              </p>
-            </blockquote>
-          </WavyBackground>
-        </div>
+      <div className="container overflow-hidden relative min-h-screen max-h-screen flex-col items-center justify-center grid lg:max-w-none lg:grid-cols-2 p-0">
         <div className="lg:p-8">
-          <div className="mx-auto flex w-full flex-col justify-center space-y-6 lg:w-[20rem]">
-            <WavyBackground className="relative z-0 my-auto" canvasClassName="md:hidden absolute">
+          <div className="mx-auto flex w-full flex-col justify-center space-y-6 lg:w-[30rem]">
+            <WavyBackground className="relative z-0" canvasClassName="absolute">
               <div className="flex flex-col space-y-2 text-center justify-center items-center">
-                <PhwtLogo/>
-                <h1 className="text-2xl font-semibold tracking-tight">
+                <PhwtLogo />
+                <h1 className="text-2xl font-semibold tracking-tight pb-4">
                   Anmleden beim Stundenplan
                 </h1>
-                <p className="text-sm text-muted-foreground">
-                  Zum fortfahren Benutzerdaten angeben.
-                </p>
               </div>
               <UserAuthForm />
-              <p className="px-8 text-center text-sm text-muted-foreground">
+              <p className="pt-4 text-center text-sm text-muted-foreground">
                 Mit dem Klicken auf Anmelden, nehmen Sie die{" "}
                 <Link
                   href="https://ilias.phwt.de"
                   className="underline underline-offset-4 hover:text-primary"
                 >
-                  Interne Benutzerrichtlinie 
+                  Interne Benutzerrichtlinie
                 </Link>{" "}
                 und{" "}
                 <Link
@@ -61,7 +34,7 @@ export function Login() {
                 </Link>
                 {" "} der PHWT an.
               </p>
-            
+
             </WavyBackground>
           </div>
         </div>
