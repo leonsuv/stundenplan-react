@@ -4,10 +4,13 @@ import { AppContext } from "@/context/AppContext";
 import { getRefresh, login } from "@/data/ApiWrapper";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
 import { loggedOutBearer } from "@/lib/utils";
-import { Input, Spinner } from "@nextui-org/react";
+import { Checkbox } from "@nextui-org/checkbox";
+import { Input } from "@nextui-org/input";
+import { Spinner } from "@nextui-org/spinner";
 import React, { useEffect } from "react";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useKeyDown } from "@/hooks/useKeyDown"
 
 
 export default function UserAuthForm() {
@@ -17,13 +20,18 @@ export default function UserAuthForm() {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
   const [loginError, setLoginError] = useState<boolean>(false);
   const [, setAuthtoken] = useLocalStorage("authToken", loggedOutBearer);
-  const [ refreshToken , setRefreshtoken] = useLocalStorage("refreshToken", loggedOutBearer);
-  localStorage.setItem("persist", "true");
+  const [refreshToken, setRefreshtoken] = useLocalStorage("refreshToken", loggedOutBearer);
+  useKeyDown(() => { reqLogin() }, ["Enter"]);
+  const [persist, setPersist] = useState<boolean>(localStorage.getItem("persist") === "true");
   const navigate = useNavigate();
+  
+  useEffect(() => {
+    localStorage.setItem("persist", persist ? "true" : "false");
+  }, [persist])
 
 
   useEffect(() => {
-    if (refreshToken !== loggedOutBearer) {
+    if (persist && refreshToken !== loggedOutBearer) {
       try {
         getRefresh(refreshToken).then((res) => {
           if (!res) return;
@@ -31,22 +39,22 @@ export default function UserAuthForm() {
           navigate("/");
         })
       } catch (error) {
-        console.error(error);
+        setRefreshtoken(loggedOutBearer);
+        setAuthtoken(loggedOutBearer);
       }
     }
-    const listener = event => {
-      if (event.code === "Enter" || event.code === "NumpadEnter") {
-        reqLogin();
-      }
-    }
-    document.addEventListener("keydown", listener);
-    return () => {
-      document.removeEventListener("keydown", listener);
-    };
   }, [])
-  async function reqLogin() {
+
+  function reqLogin() {
     setIsLoading(true);
-    const data = await login(username, password);
+    login(username, password).then((data) => {
+      uiLogin(data);
+    }).catch(() => {
+      setIsLoading(false);
+      setLoginError(true);
+    });
+  }
+  function uiLogin(data: { access_token: string; refresh_token: string; }) {
     setIsLoading(false);
 
     if (data == null) {
@@ -62,6 +70,7 @@ export default function UserAuthForm() {
 
     navigate("/");
   }
+
   return (
     <div className={"grid gap-6"}>
       <div className="grid gap-2">
@@ -73,7 +82,7 @@ export default function UserAuthForm() {
             id="username"
             placeholder="m.mustermann"
             type="username"
-            color={loginError?"danger":"default"}
+            color={loginError ? "danger" : "default"}
             autoCapitalize="none"
             value={username}
             onValueChange={(value) => setUsername(value)}
@@ -90,7 +99,7 @@ export default function UserAuthForm() {
             id="password"
             placeholder="**********"
             type="password"
-            color={loginError?"danger":"default"}
+            color={loginError ? "danger" : "default"}
             autoCapitalize="none"
             value={password}
             onValueChange={(value) => setPassword(value)}
@@ -100,11 +109,10 @@ export default function UserAuthForm() {
           />
         </div>
         <Button className="w-[8rem] mx-auto" disabled={isLoading} onClick={reqLogin}>
-          {isLoading && (
-            <Spinner className="mr-2 h-4 w-4 animate-spin black" />
-          )}
+          {isLoading && <Spinner className="mr-2 h-4 w-4 animate-spin black" />}
           Anmelden
         </Button>
+        <Checkbox className="w-[14rem] mx-auto" isSelected={persist} onValueChange={setPersist}>Angemeldet bleiben</Checkbox>
       </div>
     </div>
   )

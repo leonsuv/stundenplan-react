@@ -1,5 +1,7 @@
 import { Contact } from "@/lib/utils";
-import { Card, CardHeader, CardBody, Link } from "@nextui-org/react";
+import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import { Link } from "@nextui-org/link";
+
 
 export default function ContactCard({ contact: contact }: { contact: Contact }) {
   return (

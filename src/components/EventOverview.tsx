@@ -2,7 +2,7 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Separator } from "@/components/ui/separator"
 import EventCard from "./EventCard"
 import { useContext, useEffect, useState } from "react"
-import { Button } from "@nextui-org/react"
+import { Button } from "@nextui-org/button"
 import { AppContext, iDate } from "@/context/AppContext"
 import React from "react"
 import { getEvents } from "@/data/ApiWrapper"
@@ -15,7 +15,28 @@ export default function EventOverview() {
   const { date, setDate } = useContext(AppContext);
   const [refreshToken,] = useLocalStorage("refreshToken", loggedOutBearer);
   const [events, setEvents] = useState<EventDay[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [eventComponents, setEventComponents] = useState<JSX.Element[]>([]);
+
+  const eventDates = events.map((event) => {
+    const dateParts = event.Date.split('-').map((part: string) => parseInt(part, 10));
+    return new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
+  });
+
+  useEffect(() => {
+    const eventElements = getEventsForToday(events, date)?.Event.map((evento: any, index: number) => (
+      <React.Fragment key={index}>
+        <EventCard key={`${evento.Starttime.Hour}-${index}`} event={evento} />
+        <Separator key={`sep-${index}`} className="my-2" />
+      </React.Fragment>
+    ));
+    if (eventElements) {
+      setEventComponents(eventElements)
+    } else {
+      incrementDays(date, setDate, eventDates)
+    }
+    setIsLoading(false);
+  }, [isLoading]);
 
   useEffect(() => {
     (async () => {
@@ -31,10 +52,9 @@ export default function EventOverview() {
     })();
   }, [refreshToken]);
 
-  const eventDates = events.map((event) => {
-    const dateParts = event.Date.split('-').map((part: string) => parseInt(part, 10));
-    return new Date(dateParts[0], dateParts[1] - 1, dateParts[2]);
-  });
+  useEffect(() => {
+    setIsLoading(true);
+  }, [date]);
 
   return (
     <ScrollArea className="min-h-[400px] h-auto max-h-[600px] rounded-md border w-full max-w-[400px] min-w-[250px] md:col-span-1 col-span-2 place-self-center mb-auto">
@@ -55,17 +75,16 @@ export default function EventOverview() {
           </Button>
         </div>
         {isLoading && <div>Loading events...</div>}
-        {!isLoading && events.find((element: any) => {
-          return element.Date === stateToStrDate(date);
-        })?.Event.map((evento: any, index: number) => (
-          <React.Fragment key={index}>
-            <EventCard key={`${evento.Starttime.Hour}-${index}`} event={evento} />
-            <Separator key={`separator-${index}`} className="my-2" />
-          </React.Fragment>
-        ))}
+        {eventComponents}
       </div>
     </ScrollArea>
   )
+}
+
+function getEventsForToday(events: EventDay[], date: iDate) {
+  return (events.find((element: any) => {
+    return element.Date === stateToStrDate(date);
+  }))
 }
 
 function stateToStrDate(date: iDate): string {

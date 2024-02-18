@@ -7,10 +7,10 @@ import {
   NavbarMenu,
   NavbarContent,
   NavbarItem,
-  Link,
-  Button,
-  Spacer
-} from "@nextui-org/react";
+} from "@nextui-org/navbar";
+import { Link } from "@nextui-org/link";
+import { Button } from "@nextui-org/button";
+import { Spacer } from "@nextui-org/spacer";
 import PhwtLogo from "./PhwtLogo";
 import { useLocation } from "react-router-dom";
 import { AppContext } from "@/context/AppContext";
