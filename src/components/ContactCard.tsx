@@ -6,16 +6,15 @@ import { Link } from "@nextui-org/link";
 export default function ContactCard({ contact: contact }: { contact: Contact }) {
   return (
     <>
-      <Card>
-        <CardHeader>
+      <Card className="p-0 m-0">
+        <CardHeader className="">
           <div className="flex flex-col">
             <p className="text-md">
-              {contact.CardTitle}
+              {contact.information.Name}
             </p>
             <a className="text-small text-default-500">
-              {contact.information.Name}
             </a>
-            <Link href={"mailto:"+contact.information.Email}>{contact.information.Email}</Link>
+            <Link color="warning" href={"mailto:"+contact.information.Email}>{contact.information.Email}</Link>
           </div>
         </CardHeader>
         <CardBody>

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { cn } from "@/lib/utils";
 import { useEffect, useRef } from "react";
@@ -78,7 +79,7 @@ export const WavyBackground = ({
 			ctx.lineWidth = waveWidth || 60;
 			ctx.strokeStyle = waveColors[i % waveColors.length];
 			for (x = -10; x < w + 10; x += 3) {
-				var y = noise(x / 800, 0.2 * i*2, nt) * 120;
+				const y = noise(x / 800, 0.2 * i*2, nt) * 120;
 				ctx.lineTo(x, y + h * 0.4 + i * 15); // adjust for height, currently at 50% of the container
 			}
 			ctx.stroke();

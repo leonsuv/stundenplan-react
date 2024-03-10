@@ -1,11 +1,11 @@
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Separator } from "@/components/ui/separator"
 import { useEffect, useState } from "react"
-import React from "react"
 import { getContacts } from "@/data/ApiWrapper"
 import { useLocalStorage } from "@/hooks/useLocalStorage"
 import { Contact, loggedOutBearer } from "@/lib/utils"
 import ContactCard from "./ContactCard"
+import { Accordion, AccordionItem } from "@nextui-org/react"
 
 
 
@@ -40,12 +40,14 @@ export default function ContactOverview() {
           <h4 className="mb-4 text-sm grow text-center font-medium leading-none">Kontakte</h4>
         </div>
         {isLoading && <div>Loading contacts...</div>}
+        <Accordion variant="splitted" defaultExpandedKeys={["0"]}>
         {!isLoading && contacts.map((contact: Contact, index: number) => (
-          <React.Fragment key={index}>
+          <AccordionItem key={index} title={contact.CardTitle}>
             <ContactCard key={`${contact.information.Email || ""}-${index}`} contact={contact} />
             <Separator key={`separator-${index}`} className="my-2" />
-          </React.Fragment>
-        ))}
+          </AccordionItem>
+        )) || <AccordionItem>No contacts found</AccordionItem>}
+        </Accordion>
       </div>
     </ScrollArea>
   )
