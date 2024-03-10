@@ -77,11 +77,11 @@ export default function NavBar() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="bg-primary">
         <NavbarMenuItem key="Home">
           <Link
             className="w-full"
-            color="foreground"
+            color="secondary"
             href="/"
             size="lg"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -93,7 +93,7 @@ export default function NavBar() {
         <NavbarMenuItem key="About">
           <Link
             className="w-full"
-            color="foreground"
+            color="secondary"
             href="/about"
             size="lg"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -105,7 +105,7 @@ export default function NavBar() {
         <NavbarMenuItem key="Logout">
           <Link
             className="w-full"
-            color="primary"
+            color="danger"
             href="/login"
             size="lg"
             onClick={logOut}
