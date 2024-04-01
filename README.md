@@ -3,6 +3,8 @@
 ## Overview
 Welcome to the Lecture Scheduler App, a web application designed to view lectures.
 
+Documentation: [Documentation](documentation.md)
+
 ## Features
 * Personalized Schedule
 * Vite & React
